@@ -29,19 +29,19 @@ local Tab = Window:NewTab("Gun")
 local Section = ff:NewSection("Info")
 
 Section:NewButton("Пополнить здоровье", "Восстанавливает хп", function()
-game:GetService("Workspace").RNiceShot_Demonzer.Humanoid.Health = 1000
+game:GetService("Workspace").Gamukulus2323.Humanoid.Health = 1000
 
 end)
 
 Section:NewSlider("WalkSpeed", "max 500", 500, 0, function(s)
-    game:GetService("Workspace").RNiceShot_Demonzer.Humanoid.WalkSpeed = s
+    game:GetService("Workspace").Gamukulus2323.Humanoid.WalkSpeed = s
    
 end)
 
 local Section = Tab:NewSection("Damage")
 
 Section:NewButton("Create", "x20", function()
-    gun=require(game:GetService("Players").RNiceShot_Demonzer.Backpack["Warsport LVOA-S"]["ACS_Modulo"].Variaveis.Settings)
+    gun=require(game:GetService("Players").Gamukulus2323.Backpack["Warsport LVOA-S"]["ACS_Modulo"].Variaveis.Settings)
 gun.Bullets = 20
 
 end)
